@@ -1,10 +1,19 @@
+/* General styles */
 .App {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
+  font-family: 'lattow', sans-serif;
+  font-size: 18px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Link styles */
+.App a {
+  display: block;
+  margin-bottom: 0.7rem;
+  text-decoration: none;
+  color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,6 +22,7 @@
   }
 }
 
+/* Header styles */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,63 +34,73 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* AddressDetails.module.css or equivalent */
-.container {
-  padding: 20px;
+/* Exchange container styles */
+.exchange-container {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center !important;
+  -webkit-box-pack: justify !important;
+  padding: 10px 10px;
+  color: white;
+  font-size: 80%;
+  font-weight: 400;
   max-width: 800px;
-  margin: 40px auto;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  border-radius: 8px;
+  margin: 80px auto;
+  background-color: #282c34;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.title {
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
+.exchange-type {
+  display: table-column;
+  margin-left: 12px;
+  color:beige;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-.th, .td {
+/* Exchange name styles */
+.exchange-names {
   text-align: left;
-  padding: 12px 15px;
-  border-bottom: 1px solid #EEEEEE;
+  margin-top: 40px;
+  margin-left: 5px;
+  justify-content: space-between;
+  text-shadow: 0rem 0rem 0.02em #ffffff;
 }
 
-.th {
-  background-color: #007bff;
-  color: #ffffff;
-  font-weight: bold;
+/* Exchange price styles */
+.exchange-prices {
+  text-align: left;
+  color: green;
+  margin-bottom: 10px;
+  cursor: pointer;
+  justify-content: space-between;
+  margin-right: 6px;
 }
 
-.td {
-  color: #333333;
+/* Flex utility classes */
+.d-flex {
+  display: flex;
 }
 
-.highlight {
-  font-weight: bold;
-  color: #007bff;
+.flex-row {
+  flex-direction: row;
 }
 
-.dollar {
-  color: #28a745;
+/* Price change colors */
+.up {
+  color: rgb(76, 175, 80);
 }
 
+.down {
+  color: rgb(217, 60, 60);
+}
+
+.border-line {
+  padding-left: 10%;
+  padding-right: 10%;
+  border-left: 0.04em solid rgba(255, 255, 255, 0.3);
+}
+
+.market{
+    min-width: 12.1em;
+    color: white !important;
+}
